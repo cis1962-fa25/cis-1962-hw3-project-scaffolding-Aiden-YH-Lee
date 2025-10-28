@@ -14,14 +14,22 @@
     "format": "prettier --write .",
     "test": "jest"
   },
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "zod": "^4.1.12"
   },
   "devDependencies": {
+    "@types/jest": "^30.0.0",
     "@types/node": "^24.9.1",
+    "@typescript-eslint/eslint-plugin": "^8.46.2",
+    "@typescript-eslint/parser": "^8.46.2",
     "eslint": "^9.38.0",
+    "eslint-config-prettier": "^10.1.8",
     "jest": "30.2.0",
     "prettier": "^3.6.2",
+    "ts-jest": "^29.4.5",
     "typescript": "^5.9.3",
     "zod": "^4.1.12"
   }

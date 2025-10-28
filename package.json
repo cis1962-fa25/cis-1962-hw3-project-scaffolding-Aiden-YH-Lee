@@ -1,7 +1,26 @@
 {
+  "name": "cis-1962-validate-pizza",
+  "version": "1.0.0",
+  "author": "Aiden Lee",
+  "description": "A library for validating Pizza",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "pizza-validator": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write .",
+    "test": "jest"
+  },
   "dependencies": {
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/node": "^24.9.1",
     "eslint": "^9.38.0",
-    "jest": "^29.7.0",
+    "jest": "30.2.0",
     "prettier": "^3.6.2",
     "typescript": "^5.9.3",
     "zod": "^4.1.12"
